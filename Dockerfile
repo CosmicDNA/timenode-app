@@ -4,7 +4,7 @@ RUN apk update && apk add --no-cache bash git jq nano python alpine-sdk nginx no
 
 WORKDIR /usr/src/app
 
-RUN git clone https://github.com/chronologic/eth-alarm-clock-dapp.git . --single-branch -b develop
+RUN git clone https://github.com/CosmicDNA/eth-alarm-clock-dapp.git . --single-branch -b develop
 
 RUN git config --global url.https://github.com/.insteadOf git://github.com/
 RUN npm install
